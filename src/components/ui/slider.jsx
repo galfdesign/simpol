@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Slider({ min=0, max=100, step=1, value=[0], onValueChange }){
+export function Slider({ min=0, max=100, step=1, value=[0], onValueChange, disabled=false }){
   const v = Array.isArray(value) ? value[0] : value
   return (
     <input
@@ -10,7 +10,8 @@ export function Slider({ min=0, max=100, step=1, value=[0], onValueChange }){
       step={step}
       value={v}
       onChange={(e)=> onValueChange([parseFloat(e.target.value)])}
-      className="w-full accent-gray-800"
+      disabled={disabled}
+      className={`w-full accent-gray-800 ${disabled ? 'opacity-50 cursor-not-allowed' : ''}`}
     />
   )
 }
