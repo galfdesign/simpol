@@ -35,3 +35,8 @@ npm run preview
      git branch -M main
      git push -u origin main
      ```
+
+3. GitHub Pages (автодеплой):
+   - В `vite.config.js` установлен `base: '/simpol/'`.
+   - Workflow `.github/workflows/deploy.yml` собирает `dist` и публикует на Pages при каждом пуше в `main`.
+   - В репозитории включите Pages: Settings → Pages → Source: GitHub Actions.
