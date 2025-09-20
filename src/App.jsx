@@ -132,6 +132,8 @@ const PRESETS_INSULATION = [
   { id: "eps30", name: "EPS 30 мм", t: 0.03, k: 0.035 },
   { id: "eps50", name: "EPS 50 мм", t: 0.05, k: 0.035 },
   { id: "eps100", name: "EPS 100 мм", t: 0.10, k: 0.035 },
+  { id: "eps150", name: "EPS 150 мм", t: 0.15, k: 0.035 },
+  { id: "eps200", name: "EPS 200 мм", t: 0.20, k: 0.035 },
   { id: "xps50", name: "XPS 50 мм", t: 0.05, k: 0.030 },
   { id: "none", name: "Без утеплителя", t: 0.0, k: 1.0 },
 ];
